@@ -41,6 +41,10 @@ namespace TodoApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDefaultFiles(); //Added for JS frontend
+            
+            app.UseStaticFiles();//Added for JS frontend
+            
             app.UseHttpsRedirection();
 
             app.UseRouting();
